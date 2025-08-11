@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表格标签：
+    表格：<table>
+    行：<tr>
+    （单元格）列：<td>
+    -->
+    <table>
+        <tr>
+            <td>天禄</td>
+            <td>LVG</td>
+        </tr>
+        <tr>
+            <td>Vality</td>
+            <td>猎鹰</td>
+        </tr>
+        <tr>
+            <td>蒙古</td>
+            <td>Faze</td>
+        </tr>
+    </table>
+    <!-- 表格生成快捷键：table>tr*3>td*2{文本} -->
+
+    <!-- 表格的属性：
+    border：边框
+    cellspacing：单元格间距
+    cellpadding：单元格内容距离
+    width：宽度
+    height：高度
+    align：对齐方式
+    -->
+    <table border="2" cellspacing="0" cellpadding="10" width="800" height="600" align="center">
+        <tr>
+            <td>天禄</td>
+            <td>LVG</td>
+        </tr>
+        <tr>
+            <td>Vality</td>
+            <td>猎鹰</td>
+        </tr>
+        <tr>
+            <td>蒙古</td>
+            <td>Faze</td>
+        </tr>
+    </table>
+    <!-- border后的数字代表单元格线的像素-->
+
+    <!-- 单元格合并：
+    跨行合并（垂直合并）：rowspan="合并的行数"
+    跨列合并（水平合并）：colspan="合并的列数"
+    -->
+
+<p>
+    合并单元格6和7，水平合并colspan,在单元格6<td>中添加colspan="2"，直接将单元格7删掉<br>合并单元格15和20,垂直合并rowspan，同理在单元格15<td>中添加rowspan="2"，直接将单元格20删掉
+</p>
+
+<p>
+    水平合并：保留左边，删除右边<br>
+    垂直合并：保留上边，删除下边
+</p>
+
+    <table border="2" cellspacing="0" cellpadding="10" width="800" height="600" align="center">
+    <tr>
+        <td>单元格1</td>
+        <td>单元格2</td>
+        <td>单元格3</td>
+        <td>单元格4</td>
+        <td>单元格5</td>
+    </tr>
+    <tr>
+        <td colspan="2">单元格6</td>
+        
+        <td>单元格8</td>
+        <td>单元格9</td>
+        <td>单元格10</td>
+    </tr>
+    <tr>
+        <td>单元格11</td>
+        <td>单元格12</td>
+        <td>单元格13</td>
+        <td>单元格14</td>
+        <td rowspan="2">单元格15</td>
+    </tr>
+    <tr>
+        <td>单元格16</td>
+        <td>单元格17</td>
+        <td>单元格18</td>
+        <td>单元格19</td>
+        
+    </tr>
+    <tr>
+        <td>单元格21</td>
+        <td>单元格22</td>
+        <td>单元格23</td>
+        <td>单元格24</td>
+        <td>单元格25</td>
+    </tr>
+    
+</table>
+    <!-- 合并单元格的注意事项：
+    1.合并的单元格只能合并相邻的单元格
+    2.合并的单元格不能合并非相邻的单元格
+    3.合并的单元格不能合并不同的单元格
+    4.合并的单元格不能合并跨越多的单元格
+    -->
+</body>
+</html>

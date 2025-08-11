@@ -1,0 +1,8 @@
+1.代码格式化：Shift+Alt+F
+2.向下或向上移动一行：Alt+Up或Alt+Down（鼠标光标在该行即可）
+3.快速查找：Ctrl+F
+4.快速复制一行代码：Shift+Alt+Up或Shift+Alt+Down
+5.快速替换：Ctrl+H
+6.撤销：Ctrl+Z 
+7.恢复：Ctrl+Y
+8.注释：Ctrl + /（HTML 注释不支持嵌套）

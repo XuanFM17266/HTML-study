@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 有序列表始于<ol>标签，每个列表始于<li>标签,可嵌套 -->
+    <ol type="A">
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+    </ol>
+
+    <ol type="a">
+        <li>水果
+            <ol type="i">
+                <li>苹果</li>
+                <li>香蕉</li>
+            </ol>
+        </li>
+        <li>蔬菜
+            <ol type="I">
+                <li>西红柿</li>
+                <li>黄瓜</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <!-- <ol>的属性：
+        type：列表项标记的类型，包括a、A、i（小写罗马数字标号）、I（大写罗马数字标号）、1等
+        start：列表项的起始数字
+    -->
+
+    <!-- 无序列表始于<ul>标签，每个列表始于<li>标签，可嵌套 -->
+    <ul>
+        <li>无序列表1</li>
+        <li>无序列表2</li>
+    </ul>
+
+    <ul type="square">
+        <li>昆虫
+            <ul type="disc">
+                <li>知了</li>
+                <li>蝴蝶</li>
+            </ul>
+        </li>
+        <li>鱼类
+            <ul type="circle">
+                <li>鲤鱼</li>
+                <li>鲫鱼</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- <ul>的属性：
+        type：列表项标记的类型，包括disc（圆点）、circle（空心圆点）、square（方点）、none（无标记）
+    -->
+        <!-- 快速生成无序列表：ul>li*3（数字根据自己需要的li数量修改） -->
+    
+    <!-- 自定义列表始于<dl>标签，每个列表始于<dt>标签 -->
+    <dl>
+        <dt>自定义列表1</dt>
+        <dd>自定义列表1的内容</dd>
+        <dt>自定义列表2</dt>
+        <dd>自定义列表2的内容</dd>
+    </dl>
+<!-- <dl>的属性：
+    type：列表项标记的类型，包括compact（压缩）、default（默认）
+-->
+    <!-- 自定义列表的dt和dd标签可以嵌套 -->
+    <dl>
+        <dt>自定义列表1</dt>
+        <dd>自定义列表1的内容
+            <dl>
+                <dt>自定义列表1的子列表1</dt>
+                <dd>自定义列表1的子列表1的内容</dd>
+            </dl>
+        </dd>
+    </dl>
+   
+
+</body>
+</html>

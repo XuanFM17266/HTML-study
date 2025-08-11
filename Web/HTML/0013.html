@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/0001.css">
+
+</head>
+<body>
+    <!-- 当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，
+     你可以通过改变一个文件来改变整个站点的外观。每个页面使用 <link> 标签链接到样式表。
+     <link> 标签在（文档的）头部： -->
+<a href="./0012.html">
+    <p>
+        点击跳转0012页面
+    </p>
+</a>
+
+<p>
+    这是外部样式表的方案
+</p>
+
+<p class="class1">
+    这是类选择器的样式
+</p>
+
+<p class="class1 class2">
+    这是同个标签使用多个类选择器的样式,冲突后者覆盖前者
+</p>
+
+<p id="id1">
+    这是ID选择器的样式
+</p>
+
+<h1 id="id1">
+    这是ID选择器的样式,只能使用一次，虽然可以用在多个标签上，但是不建议这样做
+
+</h1>
+
+</body>
+</html>
