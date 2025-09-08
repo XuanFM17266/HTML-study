@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文档流是文档中可显示对象在排列时所占用的位置/空间，标准流中的限制非常多，导致很多页面效果无法实现 -->
+     <span>这是鹤壁市淇滨区</span>
+     <img src="..\image\2.jpeg" alt="">
+    <!-- 以上出现高矮不齐现象 -->
+     <p>这是一个 p标签，只有一个空格</p>
+     <p>这是一个              p标签，有很多空格</p>
+     <!-- 以上出现空格折叠现象 -->
+      <img src="..\image\2.jpeg" alt="">
+      <img src="..\image\2.jpeg" alt="">
+      <!-- 以上出现间隙 -->
+       <br>
+      <img src="..\image\2.jpeg" alt=""><img src="..\image\2.jpeg" alt="">
+      <!-- 以上则没有出现间隙 -->
+
+      <!-- 脱离文档流有3种方式:
+       1.浮动
+       2.绝对定位
+       3.固定定位
+        -->
+</body>
+</html>
