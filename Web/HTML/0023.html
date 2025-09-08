@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height:500px;
+            background-color:blueviolet;
+            display:flex;
+            flex-direction:row;
+            /* flex-direction有4个值：
+            row：默认值，主轴为水平方向，起点在左端。
+            row-reverse：主轴为水平方向，起点在右端。
+            column：主轴为垂直方向，起点在上沿。
+            column-reverse：主轴为垂直方向，起点在下沿。 */
+            justify-content:flex-end;
+            /* 主轴（flex-direction为row时为水平方向，为column时为垂直方向）方向上的对齐方式,有3个值：
+            flex-start：默认值，起点对齐。
+            flex-end：终点对齐。
+            center：居中对齐。 */
+            align-items:center;
+            /* 侧轴（与主轴垂直）方向上的对齐方式,有3个值：
+            flex-start：起点对齐。
+            flex-end：终点对齐。
+            center：居中对齐。 */
+        }
+        
+        .box1{
+            width:100px;
+            height:100px;
+            background-color: greenyellow;
+            flex: 3;
+            /* flex-grow：项目的放大比例，默认为0，即如果存在剩余空间，也不放大。 */
+            /* flex-shrink：项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。设置为0表示不允许缩小 */
+            /* flex-basis：项目的初始长度，默认为auto，即项目的本来长度。 */
+            /* flex：flex-grow flex-shrink flex-basis的简写，默认值为0 1 auto，但当为flex赋值时，不仅会改变flex-grow为你赋的值,还会改变flex-basis的值为0 */
+            /* 如果直接只设置flex-grow,因为 flex-basis: auto，它会先根据内容或 width 计算初始宽度，再用 grow 来分剩余的空间。
+            而flex相当于每个子元素从 0 宽度开始，然后按比例均分容器空间，实际效果看起来比flex-grow更合理。 */
+            /* flex-grow → 在原始宽度基础上扩展。
+            flex → 直接指定规则（常用 flex:1; 平均分）。
+            实际开发里，大部分情况下 flex 更直观、推荐使用。 */
+
+            /* flex-shrink,flex-grow,flex计算原理详见笔记 */
+
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            background-color: rgb(246, 127, 255);
+            flex:1;
+        }
+        .box3{
+            width:100px;
+            height:100px;
+            background-color: rgb(238, 255, 0);
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
