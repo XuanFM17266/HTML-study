@@ -1,0 +1,13 @@
+首先要知道flex：flex-grow flex-shrink flex-basis的简写，默认值为0 1 auto，但当为flex赋值时，不仅会改变flex-grow为你赋的值,还会改变flex-basis的值为0 
+展开来讲所有情况：
+如果只写 flex: 1;，浏览器会解析成 1 1 0（这里才会变成 basis=0）。
+如果写 flex: auto;，等价于 1 1 auto。
+如果写 flex: none;，等价于 0 0 auto。
+再者要知道平时（只使用flex-grow或flex-shrink且不使用flex时），flex-basis默认值为auto，即考虑子元素宽度，而使用flex时该值为0，即忽略子元素宽度
+当使用flex-grow时，因为考虑到了子元素宽度，所以含义为按权重分割剩下的空间，再将其加到原子元素上
+而当使用flex时，因为忽略掉了子元素宽度，所以在计算时直接按权重分配全部空间
+flex-shrink道理相同，只不过改为缩小
+flex-shrink实际上是按权重分配多出来的部分，再在相应的子元素中减去各自分配到的压缩量
+而当使用flex时，因为忽略掉了子元素宽度，所以在计算时退化为按flex-grow计算权重分配全部空间
+特别需要注意的是，以上权重均指的是赋的值（flex、flex-grow、flex-shrink）乘flex-basis（为auto时即子元素宽度，为0时即结果为0，所有权重均为0，所以按flex-grow的比例分配全部空间，这也解释了为什么flex总是简单的按赋值的比例简单分配所有空间）
+另外，当flex-shrink设置为 0，表示不允许缩小（即使容器不够宽，也保持原有大小，可能会溢出）
