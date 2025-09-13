@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background-color:aqua;
+            float:left;
+        }
+        .container{
+            width:400px;
+            height:400px;
+            background-color:rgb(255, 0, 0);
+        }
+        img{
+            width:200px;
+            float:left;
+        }
+        div{
+            width:200px;
+            height:200px;
+            float:left;
+            /* 当添加float时，元素摆放就由从上到下变为从左到右 */
+        }
+        .box1{
+            background-color:blue;
+        }
+        .box2{
+            background-color:green;
+        }
+        .box3{
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>浮动：float属性定义了元素在哪个方向浮动，任何元素都可以浮动，包括行内元素</p>
+    <p><br>浮动以后使元素脱离了文档流<br>浮动只有左右浮动，没有上下浮动</p>
+
+    <!-- 脱离文档流后相当于在页面上增加一个浮层来放置内容，此时可以理解为两层页面，一层是底层原页面，另一层是脱离文档的上层页面 -->
+    <div class="box"></div>
+    <div class="container"></div>
+
+    <div>
+        <img src="..\image\2.jpeg" alt="">
+        <img src="../image/2.jpeg" alt="">
+        <!-- 为img添加float后两图片间不再有间隙 -->
+    </div>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    
+    <!-- 当容器不足以横向摆放时，会自动换行  -->
+</body>
+</html>
